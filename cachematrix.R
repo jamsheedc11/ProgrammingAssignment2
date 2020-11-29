@@ -27,7 +27,7 @@ cacheSolve <- function(input, ...) {
             message("getting cached data")
             return(inversematrix)     # return the cached value of the inverse of the original matrix
       }
-      newmat<- input$getinversematrix()    # otherwise compute the inverse and set its value in the cache
+      newmat<- input$get()    # otherwise compute the inverse and set its value in the cache
       inversematrix<- solve(newmat,...)
       input$setinversematrix(inversematrix)  #setting the value of the inverse in the cache
       inversematrix                # return the initial matrix
