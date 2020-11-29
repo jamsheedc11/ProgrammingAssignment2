@@ -1,7 +1,7 @@
 
 # The makeCacheMatrix will make a matrix that will then cache its inverse
 # The argument 'input' is the initial matrix input from the user
-
+library(MASS)
 makeCacheMatrix <- function(input = matrix()) {
       inversematrix<- NULL                    # creates an 'inverse' object and sets it to NULL for now
       set<- function(y)   {               # function to set the value of the matrix
